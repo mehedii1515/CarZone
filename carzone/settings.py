@@ -16,9 +16,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 SECRET_KEY = 'SECRET_KEY'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env.bool("DEBUG", default=False)
+DEBUG = env.bool("DEBUG")
 
-ALLOWED_HOSTS = env.list("ALLOWED_HOSTS", default=[])
+ALLOWED_HOSTS = env.list("ALLOWED_HOSTS")
 
 
 LOGIN_REDIRECT_URL = 'dashboard'
