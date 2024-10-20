@@ -199,6 +199,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'carzone/static'),
 ]
 
+CSRF_TRUSTED_ORIGINS = ['https://carzone-x3f8.onrender.com']
 # Whitenoise for serving static files in production
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
