@@ -175,37 +175,37 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-# STATIC_URL = '/static/'
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, 'carzone/static'),
-# ]
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-# MEDIA_URL = '/media/'
-
-
-
-# Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
-
-# Directory where 'collectstatic' will store static files in production
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-# Additional locations of static files (used during development)
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'carzone/static'),
 ]
-
-CSRF_TRUSTED_ORIGINS = ['https://carzone-x3f8.onrender.com']
-# Whitenoise for serving static files in production
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-# Media files (uploaded by users)
-MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
+
+
+# # Static files (CSS, JavaScript, Images)
+# STATIC_URL = '/static/'
+
+# # Directory where 'collectstatic' will store static files in production
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# # Additional locations of static files (used during development)
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'carzone/static'),
+# ]
+
+# CSRF_TRUSTED_ORIGINS = ['https://carzone-x3f8.onrender.com']
+# # Whitenoise for serving static files in production
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+# # Media files (uploaded by users)
+# MEDIA_URL = '/media/'
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 from django.contrib.messages import constants as message
