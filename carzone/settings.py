@@ -16,10 +16,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 SECRET_KEY = 'SECRET_KEY'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env.bool("DEBUG")
+# DEBUG = env.bool("DEBUG")
 
-ALLOWED_HOSTS = env.list("ALLOWED_HOSTS")
-
+# ALLOWED_HOSTS = env.list("ALLOWED_HOSTS")
+DEBUG = True  # Set to False in production
+ALLOWED_HOSTS = ['carzone-x3f8.onrender.com']
 
 LOGIN_REDIRECT_URL = 'dashboard'
 
